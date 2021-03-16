@@ -7,8 +7,8 @@ import FormControl from "react-bootstrap/FormControl";
 
 class SearchResult extends Component {
     state = {
-        employees: [],
         search: "",
+        employees: [],
         filteredArray: []
     };
 
@@ -34,7 +34,7 @@ class SearchResult extends Component {
     sortAsc() {
         function comparison(a, b) {
             const sortA = a.name.first.toLowerCase();
-            const sortB = b.name.first.toLocaleLowerCase();
+            const sortB = b.name.first.toLowerCase();
             let compare = 0;
 
             if (sortA < sortB) {
