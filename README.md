@@ -25,7 +25,8 @@
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
   ## screenshot :
-  - ![image](https://user-images.githubusercontent.com/71415480/111343877-d6d5c300-8649-11eb-9578-c8833479b0b9.png)
+  - ![Employee Directory (1)](https://user-images.githubusercontent.com/71415480/111347717-78aadf00-864d-11eb-8b5d-9df7517bd340.gif)
+
   ## Technologies :
   - HTML 22.4%
   - CSS 10.4%
