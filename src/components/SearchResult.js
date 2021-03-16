@@ -63,7 +63,7 @@ class SearchResult extends Component {
                         <tr>
                             <th>Profile Picture</th>
                             <th>Name</th>
-                            <th>Email</th>
+                            <th>Age</th>
                             <th>Cell Phone</th>
                         </tr>
                     </thead>
