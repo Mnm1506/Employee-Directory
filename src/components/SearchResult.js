@@ -49,6 +49,24 @@ class SearchResult extends Component {
         this.setState({ filteredArray: sortedArr });
     };
 
+    sortDec() {
+        function comparison(a, b) {
+            const sortA = a.name.first.toLowerCase();
+            const sortB = b.name.first.toLowerCase();
+            let compare = 0;
+
+            if (sortA > sortB) {
+                compare = 1;
+            } else if (sortA < sortB) {
+                compare = -1;
+            }
+            return compare;
+        };
+
+        let sortedArr = this.state.filteredArray.sort(comparison);
+        this.setState({ filteredArray: sortedArr });
+    };
+
 
     render() {
         return (
@@ -56,6 +74,7 @@ class SearchResult extends Component {
                 <Form inline>
                     <FormControl type="text" placeholder="Search by first name" className="mr-md-4" value={this.state.search} onChange={this.searchUpdate} />
                     <Button variant="outline-info" onClick={this.sortAsc.bind(this)}>Sort Asc</Button>
+                    <Button variant="outline-info" onClick={this.sortDec.bind(this)}>Sort Dec</Button>
                 </Form>
 
                 <Table striped bordered hover className="table" >
